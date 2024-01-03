@@ -13,14 +13,11 @@ h2{
     text-align: center;
 }
 
-div{
-    text-align: center;
+nav{
+    display: inline;
 }
 
 button{
     text-align: center;
 }
 
-input{
-    text-align: center;
-}
