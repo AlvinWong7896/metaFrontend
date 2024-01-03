@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <meta name="description" content="A brief description">
+    <meta name="author" content="CK">
+    <meta name="keywords" content="Restaurant, food">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Sign up">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.website">
+    <meta property="og:description" content="A brief description">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Include CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Add website name or logo -->
+        <img src="logo.png" alt="logo">
+    </header>
+    <nav>
+        <!-- Add website navigation -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <div>
+                <label for="user_first_name">First Name</label><br>
+                <input type="text" id="user_first_name" name="user_first_name" required minlength="3">
+            </div>
+            <div>
+                <label for="user_last_name">Last Name</label><br>
+                <input type="text" id="user_last_name"  name="user_last_name" required>
+            </div>
+
+            <div>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email"  name="user_email" required>
+            </div>
+
+            <div>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password"  name="user_password" required minlength="8">
+            </div>
+
+            <div>
+                <label for="user_confirm_password">Confirm Password</label><br>
+                <input type="password" id="user_confirm_password"  name="user_confirm_password" required>
+            </div>
+
+            <div>
+                <br>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <style>
+            input:focus{
+                border: 2px solid red;
+            }
+        </style>
+    </main>
+    <footer>
+        <!-- Add copyright notice and other footer contents -->
+    </footer>
+    <!-- include JavaScript files -->
+    <script src="js/scripts.js"></script>
+</html>
