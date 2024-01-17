@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hello, title</title>
 </head>
 <body>
-    hello, body
+    <form>
+        <input autocomplete="off" autofocus id='name' placeholder="Name" type="text" aria-label="name">
+        <button type="submit" name="submit" aria-label="submit">Greet</button>
+    </form>
+    <script>
+        // the function() will need to be moved before </head> though
+        // function greet() {
+        //     let name = document.querySelector('#name').value;
+        //     alert('hello, ' + name);
+        // };  // need to add onsubmit="greet(); return false;" after form
+
+        document.querySelector('form').addEventListener('submit', function(e){
+            let name = document.querySelector('#name').value;
+            alert('hello, ' + name);
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>
